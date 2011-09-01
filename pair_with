@@ -1,0 +1,8 @@
+#!/bin/bash
+#Usage: pair_with username email
+#Example: pair_with "Bob Loblaw" BobLobLaw@BobLobLawsLawFirm.com
+
+username=`git config --global user.name`
+#email=`git config --global user.email`
+git config user.name "$username, $1"
+#git config user.email "$email, $2"
