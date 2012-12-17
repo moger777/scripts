@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+for file in `find . -name '*.html.erb'`; do html2haml -e $file > ${file/html.erb/haml}; rm $file; done
